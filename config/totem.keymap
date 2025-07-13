@@ -78,6 +78,9 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_FAST, COMBO
 #define PTAB &kp LC(LS(TAB))
 #define NTAB &kp LC(TAB)
 
+#define HRML(k1,k2,k3,k4) &hml LSHFT k1 &hml LALT k2 &hml LCTRL k3 &hml LGUI k4
+#define HRMR(k1,k2,k3,k4) &hmr LGUI k1 &hmr LCTRL k2 &hmr LALT k3 &hmr LSHFT k4
+
 / {
     macros {
         gif: gif {
@@ -105,7 +108,7 @@ label= "BASE"                              ;
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
                 &kp SQT      &kp EQUAL   &kp MINUS    &dotcol     &kp BSLH        &kp K       &kp L       &kp D        &kp W       &kp Z
-                &hml LSHFT C &hml LALT I &hml LCTRL E &hml LGUI A &comsem         &kp J       &hmr LGUI H &hmr LCTRL T &hmr LALT N &hmr LSHFT S
+                HRML(C,      I,          E,           A)          &comsem         &kp J       HRMR(H,     T,           N,          S)
     &kp B       &kp Q        &kp Y       &kp U        &kp O       &kp SLASH       &kp X       &kp M       &kp G        &kp P       &kp F        &kp V
                                        &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &kp ENTER   &lt SYM SPACE   &kp R
                         >;
@@ -121,9 +124,9 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &out OUT_USB        &trans    &trans   &kp UP     &kp DOWN   &trans
-                &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &kp C_VOL_UP        &trans    PTAB     &kp LEFT   &kp RIGHT  NTAB
-    &trans      &kp C_PREV  &kp C_MUTE  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN        &trans    &kp HOME &kp PG_UP  &kp PG_DN  &kp END      &trans
+                &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &out OUT_USB &trans     &trans      &kp UP      &kp DOWN    &trans
+                &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &kp C_VOL_UP     &trans     PTAB        &kp LEFT    &kp RIGHT   NTAB
+    &trans      &kp C_PREV  &kp C_MUTE  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN     &trans     &kp HOME    &kp PG_UP   &kp PG_DN   &kp END     &trans
                                         &trans      &trans      &trans          &trans     &trans   &trans
                         >;
                 };
@@ -138,9 +141,9 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans        &trans       &kp N0        &kp N9       &trans       &trans  &kp GRAVE        &kp LS(LBKT)    &kp LS(RBKT)   &trans
-                &hml LSHFT N4 &hml LALT N3 &hml LCTRL N2 &hml LGUI N1 &trans       &trans  &hmr LGUI LS(N9) &hmr LCTRL LBKT &hmr LALT RBKT &hmr LSHFT LS(N0)
-    &trans      &kp N8        &kp N7       &kp N6        &kp N5       &trans       &trans  &trans           &kp LS(COMMA)   &kp LS(DOT)    &trans            &trans
+                &trans      &trans      &kp N0      &kp N9      &trans          &trans      &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans
+                HRML(N4,    N3,         N2,         N1)         &trans          &trans      HRMR(LS(N9), LBKT,         RBKT,        LS(N0))
+    &trans      &kp N8      &kp N7      &kp N6      &kp N5      &trans          &trans      &trans       &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
                                         &trans      &trans        &trans         &trans      &trans    &trans
                         >;
                 };
