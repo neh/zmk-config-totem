@@ -64,6 +64,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 SIMPLE_MORPH(comsem, SFT, &kp COMMA, &kp SEMICOLON)
 SIMPLE_MORPH(dotcol, SFT, &kp DOT, &kp COLON)
+SIMPLE_MORPH(quebng, SFT, &kp QUESTION, &kp EXCLAMATION)
+SIMPLE_MORPH(slashy, SFT, &kp SLASH, &kp BACKSLASH)
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
@@ -107,9 +109,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
-                &kp SQT      &kp EQUAL   &kp MINUS    &dotcol     &kp BSLH        &kp K       &kp L       &kp D        &kp W       &kp Z
-                HRML(C,      I,          E,           A)          &comsem         &kp J       HRMR(H,     T,           N,          S)
-    &kp B       &kp Q        &kp Y       &kp U        &kp O       &kp SLASH       &kp X       &kp M       &kp G        &kp P       &kp F        &kp V
+                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &quebng     &kp L       &kp D        &kp W       &kp Z
+                HRML(C,      I,          E,           A)          &comsem         &kp K       HRMR(H,     T,           N,          S)
+    &kp B       &kp Q        &kp Y       &kp U        &kp O       &slashy         &kp J       &kp M       &kp G        &kp P       &kp F        &kp V
                                        &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &kp ENTER   &lt SYM SPACE   &kp R
                         >;
                 };
