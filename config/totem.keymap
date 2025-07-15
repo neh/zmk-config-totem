@@ -143,9 +143,9 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &trans      &kp N0      &kp N9      &trans          &trans      &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans
-                HRML(N4,    N3,         N2,         N1)         &trans          &trans      HRMR(LS(N9), LBKT,         RBKT,        LS(N0))
-    &trans      &kp N8      &kp N7      &kp N6      &kp N5      &trans          &trans      &trans       &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
+                &kp PERCENT &kp CARET   &kp N0      &kp N9      &kp AMPS        &kp TILDE   &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans
+                HRML(N4,    N3,         N2,         N1)         &kp DOLLAR      &kp PIPE    HRMR(LS(N9), LBKT,         RBKT,        LS(N0))
+    &trans      &kp N8      &kp N7      &kp N6      &kp N5      &kp HASH        &kp AT      &kp STAR     &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
                                         &trans      &trans        &trans         &trans      &trans    &trans
                         >;
                 };
