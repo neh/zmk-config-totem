@@ -78,6 +78,9 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_FAST, COMBO
 #define PTAB &kp LC(LS(TAB))
 #define NTAB &kp LC(TAB)
 
+#define VOLU &kp C_VOL_UP
+#define VOLD &kp C_VOL_DN
+
 #define HRML(k1,k2,k3,k4) &hml LSHFT k1 &hml LALT k2 &hml LCTRL k3 &hml LGUI k4
 #define HRMR(k1,k2,k3,k4) &hmr LGUI k1 &hmr LCTRL k2 &hmr LALT k3 &hmr LSHFT k4
 
@@ -124,7 +127,7 @@ label= "NAV"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                _BT_SEL_KEYS_                                                   &trans      &trans      &kp UP      &kp DOWN    &trans
+                &trans      VOLU        VOLD        &trans      &trans          &trans      &trans      &kp UP      &kp DOWN    &trans
                 &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &kp C_VOL_UP    &trans      PTAB        &kp LEFT    &kp RIGHT   NTAB
     &trans      &kp C_PREV  &kp C_MUTE  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN    &trans      &kp HOME    &kp PG_UP   &kp PG_DN   &kp END     &trans
                                         &trans      &trans      &trans          &kp BSPC    &kp TAB   &trans
