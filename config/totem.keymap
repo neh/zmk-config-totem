@@ -110,9 +110,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
-                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &quebng     &kp L       &kp D        &kp W       &kp V
+                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
                 HRML(C,      I,          E,           A)          &comsem         &kp K       HRMR(H,     T,           N,          S)
-    &kp Q       &kp B        &kp Y       &kp U        &kp O       &slashy         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
+    &kp Q       &kp B        &kp Y       &lt SYM U    &kp O       &quebng         &kp J       &kp M       &lt SYM G    &kp P       &kp F        &kp Z
                                        &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &lt FUN ENTER   &lt SYM SPACE   &kp R
                         >;
                 };
