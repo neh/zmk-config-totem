@@ -22,10 +22,10 @@
 #include "zmk-helpers/helper.h"
 
 #define BASE 0
-#define NAV  1
-#define SYM  2
-#define FUN  3
-#define GAME 4
+#define GAME 1
+#define NAV  2
+#define SYM  3
+#define FUN  4
 
 #include "keypos_38keys.h"
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 LH4 // left hand
@@ -114,6 +114,22 @@ label= "BASE"                              ;
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+                game_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "GAME"                              ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
+
+                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
+                &hml LCTRL C &kp I       &kp E        &kp A       &comsem         &kp K       &kp H       &kp T        &kp N       &kp S
+    &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
+                                       &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &lt FUN ENTER   &lt SYM SPACE   &kp R
+                        >;
+                };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -160,22 +176,6 @@ label= "FUN"                               ;
                 &kp F4      &kp F3      &kp F2      &kp F1      &trans          &out OUT_USB &kp F4      &kp F5      &kp F6      &kp F11
     &trans      &kp F8      &kp F7      &kp F6      &kp F5      &trans          &trans       &kp F1      &kp F2      &kp F3      &kp F10     &trans
                                         &trans      &trans      &trans          &trans       &trans      &trans
-                        >;
-                };
-
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-                game_layer {
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "GAME"                              ;
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- bindings = <
-// ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
-
-                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
-                &hml LCTRL C &kp I       &kp E        &kp A       &comsem         &kp K       &kp H       &kp T        &kp N       &kp S
-    &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
-                                       &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &lt FUN ENTER   &lt SYM SPACE   &kp R
                         >;
                 };
         };
