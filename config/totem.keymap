@@ -108,7 +108,7 @@ label= "BASE"                              ;
                 &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
                 HRML(C,      I,          E,           A)          &comsem         &kp K       HRMR(H,     T,           N,          S)
     &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
-                                       &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &lt FUN ENTER   &lt SYM SPACE   &kp R
+                                       &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   &kp R
                         >;
                 };
 
@@ -124,7 +124,7 @@ label= "GAME"                              ;
                 &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
                 &hml LCTRL C &kp I       &kp E        &kp A       &comsem         &kp K       &kp H       &kp T        &kp N       &kp S
     &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
-                                       &lt NAV BSPC   &kp LSHFT   &lt SYM ESC     &lt FUN ENTER   &lt SYM SPACE   &kp R
+                                       &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   &kp R
                         >;
                 };
 
