@@ -86,7 +86,7 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_SLOW, COMBO
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <135>;
+            tapping_term_ms = <165>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -119,9 +119,9 @@ label= "BASE"                              ;
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
                 AS(SQT)      AS(X)       AS(MINUS)    &dotcol     AS(EQUAL)       &slashy     AS(L)       AS(D)        AS(W)       AS(V)
-                HRML(C,      I,          E,           A)          &comsem         &kp K       HRMR(H,     T,           N,          S)
-    &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
-                                       &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   &kp R
+                HRML(C,      I,          E,           A)          &comsem         AS(K)       HRMR(H,     T,           N,          S)
+    AS(Q)       AS(B)        AS(Y)       AS(U)        AS(O)       &quebng         AS(J)       AS(M)       AS(G)        AS(P)       AS(F)        AS(Z)
+                                       &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   AS(R)
                         >;
                 };
 
