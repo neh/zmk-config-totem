@@ -80,7 +80,7 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_SLOW, COMBO
 #define HRMR(k1,k2,k3,k4) &hmr LGUI k1 &hmr LCTRL k2 &hmr LALT k3 &hmr LSHFT k4
 
 #define AS(keycode) &as LS(keycode) keycode
-#define AD(keycode) &as &kp COLON keycode
+#define AD(keycode) &as COLON keycode
 
 / {
     behaviors {
