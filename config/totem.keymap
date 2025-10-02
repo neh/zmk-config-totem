@@ -118,7 +118,7 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
-                AS(SQT)      AS(X)       AS(MINUS)    AS(&dotcol) AS(EQUAL)       &slashy     AS(L)       AS(D)        AS(W)       AS(V)
+                AS(SQT)      AS(X)       AS(MINUS)    AS(dotcol)  AS(EQUAL)       &slashy     AS(L)       AS(D)        AS(W)       AS(V)
                 HRML(C,      I,          E,           A)          &comsem         AS(K)       HRMR(H,     T,           N,          S)
     AS(Q)       AS(B)        AS(Y)       AS(U)        AS(O)       &quebng         AS(J)       AS(M)       AS(G)        AS(P)       AS(F)        AS(Z)
                                        &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   AS(R)
