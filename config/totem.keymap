@@ -87,7 +87,7 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_SLOW, COMBO
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <165>;
+            tapping_term_ms = <195>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
