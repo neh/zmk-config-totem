@@ -79,7 +79,7 @@ ZMK_COMBO(tab,   &kp TAB,      RB1 RB2,     BASE NAV SYM, COMBO_TERM_SLOW, COMBO
 #define HRML(k1,k2,k3,k4) &hml LSHFT k1 &hml LALT k2 &hml LCTRL k3 &hml LGUI k4
 #define HRMR(k1,k2,k3,k4) &hmr LGUI k1 &hmr LCTRL k2 &hmr LALT k3 &hmr LSHFT k4
 
-#define AS(keycode) &as LS(keycode) keycode
+#define AS(keycode) &as keycode keycode
 
 / {
     behaviors {
