@@ -118,8 +118,8 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
-                AS(SQT)      AS(X)       AS(MINUS)    &dotcol     AS(EQUAL)       &slashy     AS(L)       AS(D)        AS(W)       AS(V)
-                HRML(C,      I,          E,           A)          &comsem         AS(K)       HRMR(H,     T,           N,          S)
+                AS(SQT)      AS(X)       &comsem      &dotcol     AS(EQUAL)       &slashy     AS(L)       AS(D)        AS(W)       AS(V)
+                HRML(C,      I,          E,           A)          &kp MINUS       AS(K)       HRMR(H,     T,           N,          S)
     AS(Q)       AS(B)        AS(Y)       AS(U)        AS(O)       &quebng         AS(J)       AS(M)       AS(G)        AS(P)       AS(F)        AS(Z)
                                        &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   AS(R)
                         >;
@@ -134,8 +134,8 @@ label= "GAME"                              ;
  bindings = <
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
-                &kp SQT      &kp X       &kp MINUS    &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
-                &hml LCTRL C &kp I       &kp E        &kp A       &comsem         &kp K       &kp H       &kp T        &kp N       &kp S
+                &kp SQT      &kp X       &comsem      &dotcol     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
+                &hml LCTRL C &kp I       &kp E        &kp A       &kp MINUS       &kp K       &kp H       &kp T        &kp N       &kp S
     &kp Q       &kp B        &kp Y       &kp U        &kp O       &quebng         &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
                                        &lt NAV ENTER  &kp LSHFT   &lt SYM ESC     &lt FUN BSPC   &lt SYM SPACE   &kp R
                         >;
