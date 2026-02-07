@@ -136,9 +136,9 @@ label= "GAME"                              ;
 // ╷           ╷            ╷           ╷            ╷           ╷           ╷   ╷           ╷           ╷            ╷           ╷            ╷           ╷
 
                 &kp SQT      &kp X       &kp COMMA    &kp DOT     &kp EQUAL       &slashy     &kp L       &kp D        &kp W       &kp V
-                &mt LCTRL C  &kp I       &kp E        &kp A       &kp MINUS       &kp K       &kp H       &kp T        &kp N       &kp S
+                &kp C        &kp I       &kp E        &kp A       &kp MINUS       &kp K       &kp H       &kp T        &kp N       &kp S
     &kp Q       &kp B        &kp Y       &kp U        &kp O       &kp QUESTION    &kp J       &kp M       &kp G        &kp P       &kp F        &kp Z
-                                       &lt NAV ENTER  &kp LSHFT   &lt GYM ESC     &lt FUN BSPC   &lt SYM SPACE   &kp R
+                                       &mt LCTRL ENTER  &kp LSHFT   &lt GYM ESC     &lt NAV BSPC   &lt SYM SPACE   &kp R
                         >;
                 };
 
